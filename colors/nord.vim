@@ -285,9 +285,6 @@ call s:hi("Tag", s:nord4_gui, "", "", "", "", "")
 call s:hi("Todo", s:nord13_gui, "NONE", s:nord13_term, "NONE", "", "")
 call s:hi("Type", s:nord9_gui, "", s:nord9_term, "", "NONE", "")
 call s:hi("Typedef", s:nord9_gui, "", s:nord9_term, "", "", "")
-hi! link Annotation Decorator
-hi! link PreCondit PreProc
-hi! link Variable Identifier
 
 "+-----------+
 "+ Languages +
@@ -719,19 +716,11 @@ hi! link pandocUListItemBullet Operator
 if has('nvim')
   " tree-sitter
   " > nvim-treesitter/nvim-treesitter
-  hi! link TSAnnotation Annotation
-  hi! link TSConstBuiltin Constant
-  hi! link TSConstructor Function
-  hi! link TSEmphasis Italic
-  hi! link TSFuncBuiltin Function
-  hi! link TSFuncMacro Function
-  hi! link TSStringRegex SpecialChar
-  hi! link TSStrong Bold
-  hi! link TSStructure Structure
-  hi! link TSTagDelimiter TSTag
-  hi! link TSUnderline Underline
-  hi! link TSVariable Variable
-  hi! link TSVariableBuiltin Keyword
+  call s:hi("@constant.builtin", s:nord9_gui, "", s:nord9_term, "", "", "")
+  call s:hi("@type.builtin", s:nord7_gui, "", s:nord7_term, "", "", "")
+  hi! link @constructor Function
+  hi! link @function.builtin Function
+  hi! link @function.macro Function
 endif
 
 " TypeScript
