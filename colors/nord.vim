@@ -151,7 +151,7 @@ call s:hi("VisualNOS", "", s:nord2_gui, "", s:nord1_term, "", "")
 
 "+- Vim 8 Terminal Colors -+
 if has('terminal')
-  let g:terminal_ansi_colors = [s:nord1_gui, s:nord11_gui, s:nord14_gui, s:nord13_gui, s:nord9_gui, s:nord15_gui, s:nord8_gui, s:nord5_gui, s:nord3_gui, s:nord11_gui, s:nord14_gui, s:nord13_gui, s:nord9_gui, s:nord15_gui, s:nord7_gui, s:nord6_gui]
+  let g:terminal_ansi_colors = [s:nord1_gui, s:nord11_gui, s:nord14_gui, s:nord13_gui, s:nord9_gui, s:nord15_gui, s:nord8_gui, s:nord5_gui, s:nord3_gui, s:nord11_gui, s:nord14_gui, s:nord12_gui, s:nord10_gui, s:nord15_gui, s:nord7_gui, s:nord6_gui]
 endif
 
 if has('nvim')
@@ -167,8 +167,8 @@ if has('nvim')
   let g:terminal_color_8 = s:nord3_gui
   let g:terminal_color_9 = s:nord11_gui
   let g:terminal_color_10 = s:nord14_gui
-  let g:terminal_color_11 = s:nord13_gui
-  let g:terminal_color_12 = s:nord9_gui
+  let g:terminal_color_11 = s:nord12_gui
+  let g:terminal_color_12 = s:nord10_gui
   let g:terminal_color_13 = s:nord15_gui
   let g:terminal_color_14 = s:nord7_gui
   let g:terminal_color_15 = s:nord6_gui
