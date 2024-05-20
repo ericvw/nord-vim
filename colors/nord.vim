@@ -173,6 +173,9 @@ if has('nvim')
   let g:terminal_color_14 = s:nord7_gui
   let g:terminal_color_15 = s:nord6_gui
 
+  "+- Neovim Floating Window -+
+  call s:hi("NormalFloat", s:nord4_gui, s:nord2_gui, "NONE", s:nord1_term, "NONE", "")
+
   "+- Neovim Support -+
   call s:hi("healthError", s:nord11_gui, s:nord1_gui, s:nord11_term, s:nord1_term, "", "")
   call s:hi("healthSuccess", s:nord14_gui, s:nord1_gui, s:nord14_term, s:nord1_term, "", "")
